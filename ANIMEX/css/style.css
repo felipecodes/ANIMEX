@@ -6,6 +6,7 @@
 
 html, body {
   height: 100%;
+  background: rgb(40, 41, 41);
 }
 
 /* classes */
@@ -24,7 +25,7 @@ html, body {
 
 .header {
   width: 100%;
-  min-height: 150px;
+  height: auto;
   background-image: url('https://vignette.wikia.nocookie.net/ultradragonball/images/3/3f/Son_goku_goku_dragon_ball_z_sage_mode_naruto_uzumaki_crossovers_1360x899_wallpaper_www.wallpaperfo.com_28.jpg/revision/latest?cb=20130922143545');
   background-size: 100% 100%;
   background-position: center;
@@ -34,9 +35,8 @@ html, body {
 .logo{
   max-width: 100%;
   display: block;
-  margin: 0 auto 140px;
+  margin: 0 auto;
   position: relative;
-
 }
 
 
@@ -48,33 +48,36 @@ nav.menu-desktop ul li a{
 
 nav.menu-desktop ul {
   list-style-type: none;
-  padding-bottom: 20px;
+  background: #AD0D2D;
+  text-align: center;
+
 }
 
 nav.menu-desktop  a {
   list-style-type: none;
   text-decoration: none;
-  color: rgba(245, 254, 255, 0.637);
+  color: white;
   font-size: 1.125em;
   line-height: 1.4em;
-  
+
 }
 
 nav.menu-desktop  a:hover{
-  color: #FF59AA;
+  color: #1c1c1c;
   text-decoration: overline;
 }
 
 
 nav.menu-desktop li{
-  margin: 30px 0;
+  padding: 20px 20px;
   padding-bottom: 10px;
+  display:inline-block;
 }
 
 
 .conteudo-info h2{
   font-size: 1.563em;
-  color: rgb(126, 84, 84);
+  color: #AD0D2D;
   text-align: center;
   padding-top: 40px;
 }
@@ -84,7 +87,7 @@ nav.menu-desktop li{
   display: block;
   width: 100px;
   height: 4px;
-  border-top: 2px solid #FF59AA;
+  border-top: 2px solid #AD0D2D;
   margin:0 auto;
 }
 
@@ -92,14 +95,14 @@ nav.menu-desktop li{
 .w30{
 	float: left;
 	width: 33.333%;
-	padding: 0 20px;
+	padding: 10px;
 	margin: 20px 0;
 }
 
 
 .w50 {
   float: right;
-  margin: 30px 20px;
+  margin: 40px 20px;
 }
 
 .w50 a {
@@ -117,21 +120,122 @@ nav.menu-desktop li{
 }
 
 .w50 a:hover{
-  background-color: #FF59AA;
+  background-color: #AD0D2D;
   transition: 0.4s;
 }
 
 
 .animes {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+
+span.legendado {
+  text-transform: uppercase;
+  background: #AD0D2D;
+  width: 140px;
+  height: 50px;
+  position: relative;
+  top: -70px;
+  right: -90px;
+  padding: 20px 5px;
+  font-size: 1.25em;
+  letter-spacing: 1.4;
+  border-radius: 15px
+}
+
+.bg-anime {
+    background-color: #1C1D1D;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 10px;
+    color: white;
+
 }
 
 
 .footer{
-  background: #000000;
+  background: #AD0D2D;
   color: white;
   text-align: center;
   min-height: 90px;
   margin-top: 40px;
   padding-top: 40px;
+}
+
+
+
+@media screen and (max-width: 1188px){
+  .w50 {
+    float: right;
+    margin-top: -240px;
+  }
+}
+
+@media screen  and (max-width: 1140px){
+    .container {
+      max-width: 960px;
+    }
+
+    .w50{
+      position: relative;
+      margin:0;
+      
+    }
+
+    span.legendado {
+      top: -150px;
+    }
+    
+    .conta {
+      padding-top: 10px;
+      padding-right: 100px;
+    }
+   
+  }
+
+@media screen  and (max-width: 800px){
+
+  .container {
+    max-width: 660px;
+  }
+
+  .w30{
+    width: 50%;
+    
+    
+  }
+  
+  
+  .w50 {
+    float: none;
+    
+  }
+
+}
+
+
+@media screen  and (max-width: 540px){
+  .container {
+    max-width: 100%;
+  }
+
+  .w30{
+    width: 100%;
+    float: none;
+    
+  }
+
+  .w50 {
+    float: right;
+    width: 50%;
+  }
+  
+    .conta {
+      padding-top: 20px;
+      padding-left: 30px;
+
+    }
+
 }
